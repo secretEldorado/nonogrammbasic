@@ -31,3 +31,7 @@ can:
 won't:
 * definitely a puzzle with column and row higher than 30 and lower than 5
 * the application will be used in an android or ios application
+
+---
+**the criterium can be changed any time**
+
