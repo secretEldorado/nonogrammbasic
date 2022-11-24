@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+.container{
+    margin:0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    overflow: visible;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url("DSC_0089.JPG");
+    background-size: 170vh; */
+    font-family: 'Seaweed', cursive;
+    background-color: lightblue;
+}
+
+
+.navbar {
+    background-color: rgb(31, 187, 235);
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    /* in the foreground */
+    z-index: 1;
+}
+
+.navbar .flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: right;
+}
+
+.flex a {
+    margin: 15px;
+    padding: 3px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.flex a:hover {
+    background-color: rgb(2, 114, 148);
+    margin: 15px;
+    /* border:2px solid; */
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 200;
+    border-bottom: double red 1rem;
+    width: 700px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clock{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.box {
+    margin: 50px auto;
+    display: grid;
+    justify-content: center;
+    width: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-above-field {
+    display: flex;
+}
+
+.box-above-field .single-line{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    border: solid 1px;
+    width: 23px;
+    
+}
+
+.box-above-field p {
+    height: 25px;
+}
+
+.box-left-field .single-line{
+    background-color: wheat;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    border: solid 1px;
+    height: 23px;
+}
+
+.box-left-field p {
+    width: 25px;
+}
+
+.box-left-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.box-playing-field {
+    display: grid;    
+    /* if columns changed */
+    width: 125px;
+        grid-template-columns: repeat(5, 1fr);
+}
+
+.box-playing-field .block {
+    border: solid 1px;
+    font-size: 1.8rem;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+/* .box-playing-field .block:hover{
+    background-color: black;
+} */
+
+.box-playing-field .block p {
+    position: absolute;
+    top: -9.6px;
+    left: 0.5px;
+}
+
+.footer {
+    background-color: rgb(31, 187, 235);
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer p {
+    color: white;
+    padding: 3px 15px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        width: 400px;
+    }
+    .flex {
+        justify-content: space-evenly;
+    }
+    
+    .box-above-field .single-line{
+        width: 18px;
+    }
+    
+    .box-above-field p {
+        height: 20px;
+        font-size: 0.9rem;
+    }
+    
+    .box-left-field .single-line{
+        height: 18px;
+    }
+    
+    .box-left-field p {
+        width: 20px;
+        font-size: 0.9rem;
+    }
+    
+    .box-playing-field {
+        /* if columns changed */
+        width: 500px;
+    }
+    
+    .box-playing-field .block {
+        border: solid 1px;
+        font-size: 1.3rem;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .box-playing-field .block p {
+        position: absolute;
+        top: -5.6px;
+        left: 1px;
+    }
+}
+
+/* @media (max-width: 500px) {
+    .flex a {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 200px;
+    }
+} */

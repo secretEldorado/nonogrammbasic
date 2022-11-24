@@ -4,10 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Nonogramm</title>
 </head>
+
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="container flex">
+                <a href="/">Login</a>
+                <a href="/">Sign Up</a>
+                <a href="/about.html">About</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Title -->
     <h1>Lets Play Nonogramm</h1>
-    <p>that is a change</p>
+
+    <div id = "clock" onload="currentTime()"></div>
+
+    <!-- game -->
+    <div class="box">
+        <div class="box-empty">
+
+        </div>
+        <div class="box-above-field">
+            <div class="single-line" id="col1"><p>2</p></div>
+            <div class="single-line" id="col2"><p>5</p></div>
+            <div class="single-line" id="col3"><p>1</p></div>
+            <div class="single-line" id="col4"><p>1</p></div>
+            <div class="single-line" id="col5"><p>4</p></div>
+        </div>
+        <div class="box-left-field">
+            <div class="single-line" id="row1"><p>2</p></div>
+            <div class="single-line" id="row2"><p>1</p><p>1</p></div>
+            <div class="single-line" id="row3"><p>4</p></div>
+            <div class="single-line" id="row4"><p>1</p><p>1</p></div>
+            <div class="single-line" id="row5"><p>1</p><p>1</p></div>
+        </div>
+        <div class="box-playing-field">
+            <div class="block" id="b1"></div>
+            <div class="block" id="b2"></div>
+            <div class="block" id="b3"></div>
+            <div class="block" id="b4"></div>
+            <div class="block" id="b5"></div>
+            <div class="block" id="b6"></div>
+            <div class="block" id="b7"></div>
+            <div class="block" id="b8"></div>
+            <div class="block" id="b9"></div>
+            <div class="block" id="b10"></div>
+            <div class="block" id="b11"></div>
+            <div class="block" id="b12"></div>
+            <div class="block" id="b13"></div>
+            <div class="block" id="b14"></div>
+            <div class="block" id="b15"></div>
+            <div class="block" id="b16"></div>
+            <div class="block" id="b17"></div>
+            <div class="block" id="b18"></div>
+            <div class="block" id="b19"></div>
+            <div class="block" id="b20"></div>
+            <div class="block" id="b21"></div>
+            <div class="block" id="b22"></div>
+            <div class="block" id="b23"></div>
+            <div class="block" id="b24"></div>
+            <div class="block" id="b25"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; 2022, Marvins Website</p>
+        </div>
+    </footer>
 </body>
 </html>
