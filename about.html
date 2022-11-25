@@ -13,11 +13,41 @@
             <div class="navbar">
                 <div class="container flex flex-right">
                     <a href="/">Login</a>
-                    <a href="/">Sign Up</a>
+                    <a href="/login.html">Sign Up</a>
                     <a href="/about.html">About</a>
                 </div>
             </div>
         </nav>
-    <h1>About this website</h1>
+    <h1 id="title">Just play the Game Accecpt it</h1>
+
+    <div id = "clock" onload="currentTime()"></div>
+
+    <!-- game -->
+    <div class="box">
+        <div class="box-empty">
+
+        </div>
+        <div class="box-above-field" id="up">
+
+        </div>
+        <div class="box-left-field" id="left">
+
+        </div>
+        <div class="box-playing-field" id="game">
+        </div>
+    </div>
+
+    <!-- restart -->
+    <div class="btn" id="selectbtn">
+        <a href="/about.html">Restart</a>
+    </div>
+    
+
+    <script src="app.js"></script>  
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; 2022, Marvins Website</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -67,8 +67,8 @@ h1 {
 
 #clock{
     text-align: center;
-    font-size: 1.5rem;
-    margin-top: 30px;
+    font-size: 3rem;
+    margin-top: 60px;
 }
 
 .box {
@@ -124,7 +124,7 @@ h1 {
     display: grid;    
     /* if columns changed */
     width: 125px;
-        grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .box-playing-field .block {
@@ -132,12 +132,34 @@ h1 {
     font-size: 1.8rem;
     overflow: hidden;
     position: relative;
+}
+
+/* for the game */
+.black-color {
+    background-color: black;
+}
+
+.white-color {
     background-color: white;
 }
 
-/* .box-playing-field .block:hover{
-    background-color: black;
-} */
+.solved {
+    position: relative;
+}
+
+.solved::after{
+    content: '';
+    position:absolute;
+    height: 3px;
+    right: 0;
+    left: 0;
+    top: 10px;
+    background: gray;
+    transform: skewY(-45deg);
+    -webkit-transform: skewY(-45deg);
+    -moz-transform: skewY(-45deg);
+    -ms-transform: skewY(-45deg);
+}
 
 .box-playing-field .block p {
     position: absolute;
@@ -151,6 +173,27 @@ h1 {
     position: fixed;
     bottom: 0px;
     width: 100%;
+}
+
+.btn {
+    text-align: center;
+    margin: auto;
+    padding: 5px 30px;
+    width:fit-content;
+    margin-bottom: 50px;
+    border: solid green;
+    border-radius: 20px;
+    background-color: rgb(58, 219, 26);
+    color: green;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn a {
+    text-decoration: none;
+    color: green;
 }
 
 .footer p {
